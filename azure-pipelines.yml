@@ -12,7 +12,7 @@ pool:
 stages:
 - stage: Build
   jobs:
-  - job: pre-build
+  - job: prebuild
     steps:
     - script: echo Building!
   - job: build
