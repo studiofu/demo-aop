@@ -32,7 +32,7 @@ stages:
     - task: CopyFiles@2
       inputs:
         SourceFolder: '$(System.DefaultWorkingDirectory)'
-        Contents: '**'
+        Contents: '**/*.jar'
         TargetFolder: '$(Build.ArtifactStagingDirectory)'
     - bash: ls -R $(Build.ArtifactStagingDirectory)
     - task: PublishBuildArtifacts@1
