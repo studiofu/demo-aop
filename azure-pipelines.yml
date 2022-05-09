@@ -10,6 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- script: echo "hello world !"
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
