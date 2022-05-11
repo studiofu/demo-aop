@@ -22,7 +22,8 @@ pipeline {
 
     stage('Shrug') {
       steps {
-        timestamps()
+        sh '''echo "shrug"
+sleep 3'''
       }
     }
 
