@@ -29,7 +29,10 @@ sleep 3'''
 
     stage('Build') {
       steps {
-        sh 'ls -ltr'
+        sh '''ls -ltr
+
+mvn clean package
+'''
       }
     }
 
